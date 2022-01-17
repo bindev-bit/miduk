@@ -210,12 +210,13 @@
                                                 class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
                                                 Rp.
                                             </span>
-                                            <input type="hidden" name="uang_muka" id="uang_muka" value="84000000">
-                                            <input type="text" name="uangMmuka" id="uangMuka"
-                                                value="{{ number_format(84000000, 2) }}" disabled
+                                            {{-- <input type="hidden" name="uang_muka" id="uang_muka" value="84000000"> --}}
+                                            <input type="text" name="uang_muka" id="uang_uka"
+                                                value="{{ $kapal->uang_muka }}" placeholder="840000000"
                                                 class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300">
-
                                         </div>
+                                        <x-jet-input-error for="uang_muka" class="mt-2" />
+
 
                                         <p class="mt-2 text-sm text-gray-500">
                                             *Pembayaran uang muka dilakukan ketika sudah disetujui dari pihak

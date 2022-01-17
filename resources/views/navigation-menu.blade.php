@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-white sticky top-0 border-b border-gray-100">
+<nav x-data="{ open: false }" class="bg-blue-900 sticky top-0 border-b border-gray-100">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -12,7 +12,7 @@
                     </a>
                     <div class="flex items-center justify-start h-full ml-4">
                         <a href="{{ route('dashboard') }}" class="inline-block py-4 md:py-0">
-                            <p class="p-1 text-md5 font-black leading-none text-gray-900">
+                            <p class="p-1 text-md5 font-black leading-none text-white">
                                 PT. Miduk Armada Visitama
                             </p>
                         </a>
@@ -25,7 +25,7 @@
                     @if (request()->routeIs('kapal.index'))
                         <div class="my-2 space-x-8 sm:mr-2 sm:flex">
                             <a href="{{ route('kapal.create') }}"
-                                class="mr-2 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                                class="mr-2 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-blue-500 bg-white hover:bg-blue-400 hover:text-white">
                                 Create
                             </a>
                         </div>
@@ -33,7 +33,7 @@
                     @if (request()->routeIs('users.index'))
                         <div class="my-2 space-x-8 sm:mr-2 sm:flex">
                             <a href="{{ route('users.create') }}"
-                                class="mr-2 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                                class="mr-2 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-blue-500 bg-white hover:bg-blue-400 hover:text-white">
                                 Create
                             </a>
                         </div>

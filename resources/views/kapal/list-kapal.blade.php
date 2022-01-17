@@ -33,7 +33,7 @@
                     <div class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
                         <a href="{{ route('kapal.show', $kp) }}" class="block">
                             <img class="object-cover w-full mb-2 overflow-hidden rounded-lg max-h-56"
-                                src="https://cdn.devdojo.com/images/may2021/books.jpg">
+                                src="{{ asset('storage/' . $kp->image_url) }}">
                         </a>
                         <div
                             class="bg-blue-500 flex items-center px-3 py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white inline-block">

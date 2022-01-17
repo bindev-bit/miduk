@@ -50,7 +50,7 @@ class PembayaranController extends Controller
         $validateData['sewa_id'] = $request->sewa_id;
         $validateData['note'] = $request->note;
 
-        $sewa = Sewa::find($request->sewa_id)->first();
+        $sewa = Sewa::where('id', $request->sewa_id)->first();
         $sewa->update(['status' => 'Telah dibayar']);
 
         Pembayaran::create($validateData);

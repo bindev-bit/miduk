@@ -90,6 +90,11 @@
                                                             class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-orange-100 text-orange-800">
                                                             {{ $kp->status }}
                                                         </span>
+                                                    @elseif($kp->status == 'Ditolak')
+                                                        <span
+                                                            class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                                                            {{ $kp->status }}
+                                                        </span>
                                                     @else
                                                         <span
                                                             class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-indigo-100 text-indigo-800">

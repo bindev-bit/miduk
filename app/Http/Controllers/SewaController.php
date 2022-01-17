@@ -16,7 +16,7 @@ class SewaController extends Controller
     public function index()
     {
         if (auth()->user()->role_id != 3) {
-            $sewa = Sewa::where('status', '!=', 'Diterima')->with(['user', 'kapal'])->latest()->paginate(5);
+            $sewa = Sewa::with(['user', 'kapal'])->latest()->paginate(5);
         } else {
             $sewa = Sewa::where('user_id', auth()->user()->id)
                 ->with(['user', 'kapal'])->latest()->paginate(5);
@@ -148,5 +148,18 @@ class SewaController extends Controller
     public function destroy(Sewa $sewa)
     {
         //
+    }
+
+
+    public function tolakPengajuan(Sewa $sewa)
+    {
+        $sewa->update([
+            'status' => 'Ditolak',
+        ]);
+
+        session()->flash('flash.banner', 'Pengajuan sewa berhasil diperbarui !');
+        session()->flash('flash.bannerStyle', 'warning');
+
+        return redirect()->route('sewa.index');
     }
 }
