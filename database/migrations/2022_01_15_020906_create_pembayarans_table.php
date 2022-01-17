@@ -17,6 +17,7 @@ class CreatePembayaransTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('sewa_id')->index();
             $table->string('note')->nullable();
+            $table->string('image_url');
             $table->foreign('sewa_id')->references('id')->on('sewas')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });

@@ -9,7 +9,7 @@ class Pembayaran extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['sewa_id', 'note'];
+    protected $fillable = ['sewa_id', 'note', 'image_url'];
 
     public function sewa()
     {

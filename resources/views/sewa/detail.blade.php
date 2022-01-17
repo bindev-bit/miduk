@@ -134,32 +134,67 @@
                             Kembali
                         </a>
 
-                        @can('approval')
-                            @if ($sewa->status != 'Telah dibayar')
-                                <button type="button" @click="tolakModal = !tolakModal"
-                                    class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 mr-4">
-                                    Tolak
+                        @if ($sewa->status != 'Diterima')
+                            @can('approval')
+                                @if ($sewa->status != 'Telah dibayar')
+                                    <button type="button" @click="tolakModal = !tolakModal"
+                                        class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 mr-4">
+                                        Tolak
+                                    </button>
+                                @endif
+                                <button type="button" @click="showModal = !showModal"
+                                    class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mr-4">
+                                    Konfirmasi
                                 </button>
-                            @endif
-                            <button type="button" @click="showModal = !showModal"
-                                class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mr-4">
-                                Konfirmasi
-                            </button>
-                        @endcan
+                            @endcan
 
-                        @cannot('approval')
-                            @if ($sewa->status == 'Menunggu pembayaran')
-                                <a href="{{ route('pembayaran.sewa.create', ['sewa' => $sewa]) }}"
-                                    class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 mr-4">
-                                    Pembayaran
-                                </a>
-                            @endif
-                        @endcannot
+                            @cannot('approval')
+                                @if ($sewa->status == 'Menunggu pembayaran')
+                                    <a href="{{ route('pembayaran.sewa.create', ['sewa' => $sewa]) }}"
+                                        class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 mr-4">
+                                        Pembayaran
+                                    </a>
+                                @endif
+                            @endcannot
+                        @endif
 
                     </div>
                 </div>
         </header>
         <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
+
+            @if ($pembayaran->image_url)
+                <div class="md:grid mt-5 md:grid-cols-3 md:gap-6">
+                    <div class="md:col-span-1">
+                        <div class="px-4 sm:px-0">
+                            <h3 class="text-lg font-medium leading-6 text-gray-900">Detail Pembayaran</h3>
+                            <p class="mt-1 text-sm text-gray-600">
+                                Informasi ini sebagai bukti pembayaran user terhadap penyewaan kapal.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-5 md:mt-0 md:col-span-2">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">
+                                Bukti pembayaran
+                            </label>
+                            <div
+                                class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
+                                <div class="space-y-1 text-center">
+
+                                    <div class="flex flex-wrap justify-center mb-6">
+                                        <img class="img-preview max-w-sm h-auto shadow-lg rounded-lg"
+                                            src="{{ asset('storage/' . $pembayaran->image_url) }}" alt="" />
+                                    </div>
+
+                                </div>
+                            </div>
+                            <x-jet-input-error for="image_url" class="mt-2" />
+                        </div>
+                    </div>
+                </div>
+                <x-jet-section-border />
+            @endif
 
             <div class="md:grid mt-5 md:grid-cols-3 md:gap-6">
                 <div class="md:col-span-1 mr-12">

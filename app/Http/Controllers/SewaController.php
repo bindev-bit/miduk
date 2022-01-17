@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Kapal;
+use App\Models\Pembayaran;
 use App\Models\Sewa;
 use Illuminate\Http\Request;
 
@@ -92,7 +93,8 @@ class SewaController extends Controller
     public function show(Sewa $sewa)
     {
         $sewa = Sewa::where('id', $sewa->id)->with(['user', 'kapal'])->first();
-        return view('sewa.detail', compact('sewa'));
+        $pembayaran = Pembayaran::where('sewa_id', $sewa->id)->first();
+        return view('sewa.detail', compact(['sewa', 'pembayaran']));
     }
 
     /**
