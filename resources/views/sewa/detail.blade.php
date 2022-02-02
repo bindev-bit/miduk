@@ -163,7 +163,7 @@
         </header>
         <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
 
-            @if ($pembayaran->image_url)
+            @if (!empty($pembayaran))
                 <div class="md:grid mt-5 md:grid-cols-3 md:gap-6">
                     <div class="md:col-span-1">
                         <div class="px-4 sm:px-0">
