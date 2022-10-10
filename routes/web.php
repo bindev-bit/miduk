@@ -28,6 +28,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('users', UsersController::class);
     Route::resource('kapal', KapalController::class);
     Route::resource('pembayaran', PembayaranController::class)->except(['create']);
+    
     Route::resource('sewa', SewaController::class)->except(['create']);
 
     Route::get('sewa/{kapal}/{pages}', 'App\Http\Controllers\SewaController@create')->name('kapal.sewa.create');

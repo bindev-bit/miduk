@@ -5,9 +5,9 @@
         <!-- Main Hero Content -->
         <div class="container max-w-lg px-4 py-32 mx-auto text-left md:max-w-none md:text-center">
             <h1
-                class="text-4xl font-extrabold leading-10 tracking-tight text-left text-gray-900 md:text-center sm:leading-none md:text-6xl lg:text-7xl">
+                class="text-4xl font-extrabold tracking-tight text-left text-gray-900 leading-10 md:text-center sm:leading-none md:text-6xl lg:text-7xl">
                 <span class="inline md:block">Miduk Aramada Visitama</span> <span
-                    class="relative 2 text-3xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-indigo-500 md:inline-block">Shipping
+                    class="relative text-3xl text-transparent 2 bg-clip-text bg-gradient-to-br from-indigo-600 to-indigo-500 md:inline-block">Shipping
                     agency company</span>
             </h1>
             <div class="mx-auto mt-5 text-gray-500 md:mt-12 md:max-w-lg md:text-center lg:text-lg">Our company is
@@ -18,7 +18,7 @@
             <div class="flex flex-col items-center mt-12 text-center">
                 <span class="relative inline-flex w-full md:w-auto">
                     <a href="#_" type="button"
-                        class="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-white bg-indigo-600 border border-transparent rounded-full md:w-auto hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600">Rent
+                        class="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold text-white bg-indigo-600 border border-transparent rounded-full leading-6 md:w-auto hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600">Rent
                         now
                     </a>
                 </span>
@@ -30,44 +30,44 @@
 </section>
 
 <!-- Section 2 -->
-<section class="w-full bg-white pb-8 md:pb-24">
+<section class="w-full pb-8 bg-white md:pb-24">
 
     <div class="w-full px-5 py-6 mx-auto space-y-5 sm:py-8 md:py-12 sm:space-y-8 md:space-y-16 max-w-7xl">
 
-        <div class="max-w-7xl px-10 pb-7 mx-auto sm:text-center">
-            <h2 class="font-bold text-2xl sm:text-3xl lg:text-4xl mt-3">Our services.</h2>
+        <div class="px-10 mx-auto max-w-7xl pb-7 sm:text-center">
+            <h2 class="mt-3 text-2xl font-bold sm:text-3xl lg:text-4xl">Our services.</h2>
         </div>
 
         <div class="flex flex-col items-center sm:px-5 md:flex-row">
-            <div class="w-full md:w-1/2 pl-12 px-5">
+            <div class="w-full px-5 pl-12 md:w-1/2">
                 <img class="object-cover w-full h-full rounded-lg max-h-64 sm:max-h-96"
                     src="{{ asset('assets/home/home-1.jpeg') }}">
             </div>
-            <div class="box-border order-first w-full text-black border-solid md:w-1/2 md:pl-10 md:order-none">
+            <div class="order-first w-full text-black border-solid box-border md:w-1/2 md:pl-10 md:order-none">
                 <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
                     Boost Productivity
                 </h2>
-                <p class="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg">
+                <p class="pt-4 pb-8 m-0 text-gray-700 border-0 border-gray-300 leading-7 sm:pr-12 xl:pr-32 lg:text-lg">
                     Build an atmosphere that creates productivity in your organization and your company culture.
                 </p>
-                <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
-                    <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                <ul class="p-0 m-0 border-0 border-gray-300 leading-6">
+                    <li class="relative py-1 pl-0 text-left text-gray-500 border-solid box-border">
                         <span
                             class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-300 rounded-full"><span
                                 class="text-sm font-bold">✓</span></span> Shipping Agency
                     </li>
-                    <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <li class="relative py-1 pl-0 text-left text-gray-500 border-solid box-border">
                         <span
                             class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-300 rounded-full"><span
                                 class="text-sm font-bold">✓</span></span> Tug and Barge
                     </li>
-                    <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <li class="relative py-1 pl-0 text-left text-gray-500 border-solid box-border">
                         <span
                             class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-300 rounded-full"><span
                                 class="text-sm font-bold">✓</span></span> Stevedoring
                     </li>
 
-                    <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <li class="relative py-1 pl-0 text-left text-gray-500 border-solid box-border">
                         <span
                             class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-300 rounded-full"><span
                                 class="text-sm font-bold">✓</span></span> Project Logistic
@@ -77,37 +77,37 @@
         </div>
 
         <div class="flex flex-col items-center sm:px-5 md:flex-row">
-            <div class="box-border w-full text-black border-solid md:w-1/2 md:pl-6 xl:pl-32">
+            <div class="w-full text-black border-solid box-border md:w-1/2 md:pl-6 xl:pl-32">
                 <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
                     Other services
                 </h2>
-                <p class="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-lg">
+                <p class="pt-4 pb-8 m-0 text-gray-700 border-0 border-gray-300 leading-7 sm:pr-10 lg:text-lg">
                     Save time and money with our revolutionary services. We are the leaders in the industry.
                 </p>
-                <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
-                    <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                <ul class="p-0 m-0 border-0 border-gray-300 leading-6">
+                    <li class="relative py-1 pl-0 text-left text-gray-500 border-solid box-border">
                         <span
                             class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-300 rounded-full"><span
                                 class="text-sm font-bold">✓</span></span> Crew Change
                     </li>
-                    <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <li class="relative py-1 pl-0 text-left text-gray-500 border-solid box-border">
                         <span
                             class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-300 rounded-full"><span
                                 class="text-sm font-bold">✓</span></span> Arrangement
                     </li>
-                    <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <li class="relative py-1 pl-0 text-left text-gray-500 border-solid box-border">
                         <span
                             class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-300 rounded-full"><span
                                 class="text-sm font-bold">✓</span></span> Ship Chandler
                     </li>
-                    <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <li class="relative py-1 pl-0 text-left text-gray-500 border-solid box-border">
                         <span
                             class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-300 rounded-full"><span
                                 class="text-sm font-bold">✓</span></span> Underwater Services
                     </li>
                 </ul>
             </div>
-            <div class="w-full md:w-1/2 pl-12 px-5">
+            <div class="w-full px-5 pl-12 md:w-1/2">
                 <img class="object-cover w-full h-full rounded-lg max-h-64 sm:max-h-96"
                     src="{{ asset('assets/home/home-2.png') }}">
             </div>
@@ -116,62 +116,62 @@
 </section>
 
 <!-- Section 3 -->
-<section class="py-12 sm:py-16 bg-white">
-    <div class="max-w-7xl px-10 mx-auto sm:text-center">
-        <p class="text-blue-500 font-medium uppercase">Our Application Integrations</p>
-        <h2 class="font-bold text-3xl sm:text-4xl lg:text-5xl mt-3">Connect with our Portfolio's.</h2>
-        <p class="mt-4 text-gray-500 text-base sm:text-xl lg:text-2xl">We've built portfolio's with some of our
-            services.<br class="lg:hidden hidden sm:block"> Check'em out below 👇</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 my-12 sm:my-16">
+<section class="py-12 bg-white sm:py-16">
+    <div class="px-10 mx-auto max-w-7xl sm:text-center">
+        <p class="font-medium text-blue-500 uppercase">Our Application Integrations</p>
+        <h2 class="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">Connect with our Portfolio's.</h2>
+        <p class="mt-4 text-base text-gray-500 sm:text-xl lg:text-2xl">We've built portfolio's with some of our
+            services.<br class="hidden lg:hidden sm:block"> Check'em out below 👇</p>
+        <div class="my-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:my-16">
 
-            <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
+            <div class="flex flex-col items-center justify-center py-10 border border-gray-100 rounded-lg shadow-lg">
                 <p class="font-bold ">PT. Sinarmas LDA Maritime</p>
                 <p class="mt-2 text-sm text-gray-500">transportasi batubara, curah cair dan operasi pelabuhan.</p>
             </div>
 
-            <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
+            <div class="flex flex-col items-center justify-center py-10 border border-gray-100 rounded-lg shadow-lg">
                 <p class="font-bold ">PT. Patria Maritime Lines</p>
                 <p class="mt-2 text-sm text-gray-500">pengangkutan batubara, energi lain dari konsesi pertambangan, dan
                     berbagai komoditas.
                 </p>
             </div>
 
-            <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
+            <div class="flex flex-col items-center justify-center py-10 border border-gray-100 rounded-lg shadow-lg">
                 <p class="font-bold ">PT. Multiguna Internasional Persada</p>
                 <p class="mt-2 text-sm text-gray-500">layanan sea freight, air freight, FCL, LCL, ex-work, re-stuffing
                     antar pulau, CIF, CN.
                 </p>
             </div>
 
-            <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
+            <div class="flex flex-col items-center justify-center py-10 border border-gray-100 rounded-lg shadow-lg">
                 <p class="font-bold ">PT. Pancaran Samudera Transport</p>
                 <p class="mt-2 text-sm text-gray-500">melayani transportasi domestik dan internasional selama lebih dari
                     20 tahun.
                 </p>
             </div>
 
-            <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
+            <div class="flex flex-col items-center justify-center py-10 border border-gray-100 rounded-lg shadow-lg">
                 <p class="font-bold ">PT. Alur Biru Maritim</p>
                 <p class="mt-2 text-sm text-gray-500">perusahaan Indonesia dengan nomor registrasi 9/1539 diterbitkan
                     pada tahun 2017.
                 </p>
             </div>
 
-            <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
+            <div class="flex flex-col items-center justify-center py-10 border border-gray-100 rounded-lg shadow-lg">
                 <p class="font-bold ">PT. Cast Bay Marine</p>
                 <p class="mt-2 text-sm text-gray-500">pengiriman melalui kualitas HSE, Keunggulan Orang, dan Manajemen
                     Kualitas yang Tepat.
                 </p>
             </div>
 
-            <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
+            <div class="flex flex-col items-center justify-center py-10 border border-gray-100 rounded-lg shadow-lg">
                 <p class="font-bold ">PT. Dian Ciptamas Agung</p>
                 <p class="mt-2 text-sm text-gray-500">pengangkutan logistik dan penyewaan kapal untuk berbagai layanan.
                 </p>
             </div>
 
 
-            <div class="rounded-lg py-10 flex flex-col items-center justify-center shadow-lg border border-gray-100">
+            <div class="flex flex-col items-center justify-center py-10 border border-gray-100 rounded-lg shadow-lg">
                 <p class="font-bold ">PT. Pelayaran Oni</p>
                 <p class="mt-2 text-sm text-gray-500">menyediakan tugboat dan tongkang dengan kapasitas muat beragam
                     mulai dari 1000 – 8500 tonase.
@@ -182,11 +182,11 @@
 </section>
 
 <!-- Section 4 -->
-<section class="py-8 leading-7 text-gray-900 bg-white sm:py-12 md:py-16 lg:py-24">
+<section class="py-8 text-gray-900 bg-white leading-7 sm:py-12 md:py-16 lg:py-24">
     <div class="max-w-6xl px-4 px-10 mx-auto border-solid lg:px-12">
         <div
-            class="flex flex-col items-start leading-7 text-gray-900 border-0 border-gray-200 lg:items-center lg:flex-row">
-            <div class="box-border flex-1 text-center border-solid sm:text-left">
+            class="flex flex-col items-start text-gray-900 border-0 border-gray-200 leading-7 lg:items-center lg:flex-row">
+            <div class="flex-1 text-center border-solid box-border sm:text-left">
                 <h2
                     class="m-0 text-4xl font-semibold leading-tight tracking-tight text-left text-black border-0 border-gray-200 sm:text-5xl">
                     Boost Your Productivity

@@ -32,7 +32,7 @@
 
                 <div class="md:flex md:flex-grow md:overflow-hidden">
                     @livewire('sidebar')
-                    <div scroll-region="" class="md:flex-1 px-4 py-8 md:py-7 md:overflow-y-auto">
+                    <div scroll-region="" class="px-4 py-8 md:flex-1 md:py-7 md:overflow-y-auto">
                         {{ $slot }}
                     </div>
                 </div>
@@ -45,7 +45,8 @@
             <main>
                 {{ $slot }}
             </main>
-        @endauth
+			</div>
+	@endauth
 
         @stack('modals')
 
